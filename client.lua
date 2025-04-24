@@ -19,7 +19,7 @@ AddEventHandler('exrp_naborListky:startJobDialog', function(job)
             if question.type == 'input' then
                 data[question.label] = input[i]
             elseif question.type == 'checkbox' then
-                data[question.label] = input[i] and 'Ano' or 'Ne'
+                data[question.label] = input[i] and 'Yes' or 'No'
             end
         end
 
